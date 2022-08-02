@@ -1,0 +1,22 @@
+[features]
+seeds = false
+
+[programs.localnet]
+lending = "4JM47H9t82cK6qtSdZLmnWwbTss6JPH7csJBZz5Qe68o"
+locking = "5DkgLNzMMMdxoEUrS2ZwVWxcsW7E5LAsCLsp25WX6jyE"
+whitelisting = "GwUMfoPtUC4EgTtKePwuVmfifpU5zFGmR6mPPVAtthKx"
+
+[programs.devnet]
+lending = "4JM47H9t82cK6qtSdZLmnWwbTss6JPH7csJBZz5Qe68o"
+locking = "5DkgLNzMMMdxoEUrS2ZwVWxcsW7E5LAsCLsp25WX6jyE"
+whitelisting = "GwUMfoPtUC4EgTtKePwuVmfifpU5zFGmR6mPPVAtthKx"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/faydspeare/.config/solana/anchor.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/lending/tests.ts"
